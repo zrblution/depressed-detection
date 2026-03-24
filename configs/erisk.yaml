@@ -1,0 +1,16 @@
+dataset_name: erisk
+language: en
+screener_model: /home/tos_lx/basemodel/all-MiniLM-L6-v2
+scored_path: ../dataset/eRisk25/t2_score_data/depressed.scored.jsonl
+cleaned_path: ../dataset/eRisk25/t2_cleaned_data/control.cleaned.jsonl
+processed_dir: data/processed/erisk
+cv_folds: 5
+fold_index: 0
+train_path: data/user_samples/erisk/fold_0/train.jsonl
+val_path: data/user_samples/erisk/fold_0/val.jsonl
+test_path: data/user_samples/erisk/fold_0/test.jsonl
+scored_posts_path: data/processed/erisk/depressed_scored_posts.jsonl
+encoder_save_path: data/models/erisk/fold_0/encoder_pretrained.pt
+warmstart_save_path: data/models/erisk/fold_0/warmstart_experts.pt
+save_path: data/models/erisk/fold_0/final_model.pt
+log_path: data/models/erisk/fold_0/training_log.json

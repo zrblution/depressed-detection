@@ -1,0 +1,71 @@
+dataset_name: swdd
+language: zh
+screener_model: /home/tos_lx/basemodel/gte-small-zh
+screener_device: cuda:0
+screener_batch_size: 256
+screener_encode_chunk_size: 4096
+screener_multi_gpu: false
+screener_target_devices:
+risk_selection:
+  mode: dynamic_k
+
+model_name: /home/tos_lx/basemodel/mdeberta-v3-base
+torch_dtype: auto
+max_post_tokens: 512
+gradient_checkpointing: false
+num_post_markers: 2048
+num_experts: 5
+expert_hidden: 512
+expert_output: 256
+gate_hidden: 256
+stats_dim: 5
+meta_dim: 10
+evidence_top_k:
+evidence_ratio: 0.12
+evidence_min_k: 4
+evidence_max_k: 10
+evidence_score_threshold: 0.55
+
+encoder_pretrain_epochs: 3
+encoder_pretrain_batch_size: 4
+encoder_pretrain_lr: 2.0e-5
+warm_start_epochs: 5
+warm_start_lr: 1.0e-4
+max_epochs: 5
+batch_size: 4
+freeze_encoder_epochs: 0
+patience: 5
+lr_encoder: 2.0e-5
+lr_head: 1.0e-4
+weight_decay: 0.01
+alpha: 0.3
+beta: 0.2
+gamma: 0.15
+delta_init: 0.1
+delta_min: 0.02
+pos_weight: 1.0
+p_risk_swap: 0.5
+p_meta_drop: 0.5
+p_block_drop: 0.4
+p_prior_drop: 0.3
+p_post_drop: 0.3
+max_gap_days: 7
+global_history_coverage: 0.6
+global_history_max_per_segment: 128
+
+processed_dir: data/processed/swdd
+user_samples_dir: data/user_samples
+models_dir: data/models
+results_dir: results
+
+train_path: data/user_samples/swdd_train.jsonl
+val_path: data/user_samples/swdd_val.jsonl
+test_path: data/user_samples/swdd_test.jsonl
+scored_posts_path: data/processed/swdd/depressed_scored_posts.jsonl
+encoder_save_path: data/models/swdd_encoder_pretrained.pt
+warmstart_save_path: data/models/swdd_warmstart_experts.pt
+save_path: data/models/swdd_final_model.pt
+log_path: data/models/swdd_training_log.json
+
+explanation_model:
+explanation_api_key:

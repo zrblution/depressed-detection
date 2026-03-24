@@ -1,0 +1,19 @@
+{
+  "stage_c": {
+    "train_mse": [
+      0.017575233701675658,
+      0.007028798262278239,
+      0.007151564435353355
+    ],
+    "val_mse": [
+      0.007533703192296731,
+      0.006744400913496891,
+      0.007732421753416024
+    ]
+  },
+  "stopped_after_stage_c": false,
+  "train_path": "/home/tos_lx/Depression-Detection/code/data/user_samples/swdd_train.jsonl",
+  "val_path": "/home/tos_lx/Depression-Detection/code/data/user_samples/swdd_val.jsonl",
+  "scored_posts_path": "/home/tos_lx/Depression-Detection/code/data/processed/swdd/depressed_scored_posts.jsonl",
+  "encoder_save_path": "/home/tos_lx/Depression-Detection/code/data/models/swdd_qwen3_encoder_pretrained.pt"
+}

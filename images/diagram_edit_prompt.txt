@@ -1,0 +1,25 @@
+Please edit the diagram using candidate_4 as the main base image and candidate_3 only as a local structural reference.
+
+Goal:
+Create a refined fused academic architecture diagram based primarily on candidate_4. Do not redesign the whole figure from scratch. Keep candidate_4 as the dominant source, while applying only the specified layout adjustment and module replacements.
+
+Instructions:
+1. Use candidate_4 as the main figure in terms of overall content, visual style, color tone, box style, arrows, typography, and academic paper diagram appearance.
+2. Change the overall composition of candidate_4 into a clearer left-to-right horizontal flow, instead of a top-to-bottom layered reading order. The final reading path should be visually obvious from left to right.
+3. Replace the corresponding user representation part in candidate_4 with the "User Representations" section from candidate_3.
+   - Keep the representation structure and labels from candidate_3, including the organized representation tokens such as Z_sd, Z_ep, Z_sp, Z_mix, and Z_g, as well as the "User Representations" title.
+   - However, restyle this replaced section so it matches candidate_4 visually.
+4. Replace the "Build Global History Summary" module in candidate_4 with the "Global History Summary" module from candidate_3.
+   - Keep the wording and structural expression of "Global History Summary" from candidate_3.
+   - But unify its size, border style, color, and typography with candidate_4.
+5. Aside from these two replacements, preserve the rest of candidate_4 as much as possible, including its core modules, semantic meaning, logical flow, and overall architecture.
+6. Only adjust connections, spacing, and alignment where necessary to support the new left-to-right layout.
+7. Keep all labels in English. Avoid missing text, spelling errors, overlapping text, or unnecessary new elements.
+8. Maintain a clean academic figure style: flat 2D vector-like design, neat alignment, balanced spacing, consistent arrows, minimal line crossing, publication-ready quality.
+9. Do not make it look like a brand-new design dominated by candidate_3. The final result should still clearly look like an upgraded version of candidate_4.
+
+Output requirements:
+- A high-resolution, clean, publication-style fused architecture diagram
+- Left-to-right overall layout
+- Precise local replacement only
+- Consistent visual style across all modules

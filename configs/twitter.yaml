@@ -1,0 +1,14 @@
+dataset_name: twitter
+language: en
+screener_model: /home/tos_lx/basemodel/all-MiniLM-L6-v2
+scored_path: ../dataset/twitter/MultiModalDataset/formatted_data/score_data/depressed.scored.jsonl
+cleaned_path: ../dataset/twitter/MultiModalDataset/formatted_data/cleaned-data/normal.cleaned.jsonl
+processed_dir: data/processed/twitter
+train_path: data/user_samples/twitter_train.jsonl
+val_path: data/user_samples/twitter_val.jsonl
+test_path: data/user_samples/twitter_test.jsonl
+scored_posts_path: data/processed/twitter/depressed_scored_posts.jsonl
+encoder_save_path: data/models/twitter_encoder_pretrained.pt
+warmstart_save_path: data/models/twitter_warmstart_experts.pt
+save_path: data/models/twitter_final_model.pt
+log_path: data/models/twitter_training_log.json
